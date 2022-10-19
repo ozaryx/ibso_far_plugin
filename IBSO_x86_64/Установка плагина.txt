@@ -1,0 +1,27 @@
+1. Скопируйте папку IBSO с файлами
+	IBSO.dll
+	IBSOENG.LNG
+	IBSORUS.LNG
+в папку для плагинов FARa.
+Обычно это C:\Program Files\Far Manager\Plugins
+
+2. Если у Вас на компьютере установлен Client Oracle 11 64-битной версии, то никаких дополнительных действий выполнять
+не нужно.
+Если же это не так (на данный момент обычно установлен Client Oracle 11 32-битной версии), то при попытке запуска
+плагина вы получите ошибку
+Could not load file or assembly 'Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b48
+Для ее исправления скопируйте файлы
+	oci.dll
+	Oracle.DataAccess.dll
+	oraociei11.dll
+	OraOps11w.dll
+из папки client_oracle_11_x64 в папку куда у Вас установлен FAR.
+Обычно это C:\Program Files\Far Manager
+
+3. Если Вы в процессе подключения получаете ошибу
+ORA-12154: TNS:could not resolve the connect identifier specified
+то возможно Вам нужно установить системную переменную среды 
+TNS_ADMIN с указанием пути к файлу TNSNAMES.ORA
+или
+ORACLE_HOME в значение равное пути, куда у вас установлен Oracle Client.
+Обычно это C:\oracle\product\11.2.0\client_1

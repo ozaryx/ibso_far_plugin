@@ -1,0 +1,8 @@
+1. Скопируйте папку IBSO с файлами
+	IBSO.dll
+	IBSOENG.LNG
+	IBSORUS.LNG
+в папку для плагинов FARa.
+Обычно это C:\Program Files (x86)\Far Manager\Plugins
+
+2. У Вас на компьютере должен быть установлен Client Oracle 11,12 32-битной версии.
